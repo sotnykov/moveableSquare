@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #0ba5a5;
+  transition: transform 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.square.jumping {
+  transform: translateY(-10px);
+}
+
+.square.squatting {
+  transform: scale(1.25);
+  height: 60px;
+}
